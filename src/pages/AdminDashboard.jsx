@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Tabs, Tab } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { productosAPI, usuariosAPI } from '../data/api';
-import ProductosAdmin from '../components/organisms/ProductosAdmin';
+import ProductAdmin from '../components/organisms/ProductAdmin';
 import UsuariosAdmin from '../components/organisms/UsuariosAdmin';
 import CategoriasAdmin from '../components/organisms/CategoriasAdmin';
 import '../styles/pages/AdminDashboard.css';
@@ -101,7 +101,7 @@ function AdminDashboard() {
               <Card.Body>
                 <Tabs defaultActiveKey="productos" className="mb-3" variant="pills">
                   <Tab eventKey="productos" title="📦 Productos">
-                    <ProductosAdmin onUpdate={loadStats} />
+                    <ProductAdmin onUpdate={loadStats} />
                   </Tab>
                   <Tab eventKey="usuarios" title="👥 Usuarios">
                     <UsuariosAdmin onUpdate={loadStats} />
