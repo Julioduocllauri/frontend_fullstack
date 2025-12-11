@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import { listasAPI } from '../data/api';
+import { listasAPI } from '../../data/api';
 import { useAuth } from './AuthContext';
 
 const ListasContext = createContext(null);
