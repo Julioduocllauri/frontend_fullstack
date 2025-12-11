@@ -3,9 +3,9 @@ import { Button, Dropdown, Modal, Form } from 'react-bootstrap';
 import { useAuth } from '../../context/AuthContext';
 import { useListas } from '../../context/ListasContext';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/atoms/AddToListaButton.css';
+import '../../styles/atoms/AddListaButton.css';
 
-function AddToListaButton({ producto }) {
+function AddListaButton({ producto }) {
   const { isAuthenticated } = useAuth();
   const { listas, addProductoToLista, createLista, isProductoInLista } = useListas();
   const navigate = useNavigate();
@@ -139,4 +139,4 @@ function AddToListaButton({ producto }) {
   );
 }
 
-export default AddToListaButton;
+export default AddListaButton;
