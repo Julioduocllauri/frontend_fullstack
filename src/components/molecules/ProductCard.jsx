@@ -1,7 +1,7 @@
 import { Card, Badge } from 'react-bootstrap';
 import { useState } from 'react';
 import ViewMoreButton from '../atoms/ViewMoreButton';
-import AddToListaButton from '../atoms/AddToListaButton';
+import AddListaButton from '../atoms/AddListaButton';
 import '../../styles/molecules/ProductCard.css';
 
 const ProductCard = ({ product = {} }) => {
@@ -126,7 +126,7 @@ const ProductCard = ({ product = {} }) => {
           )}
 
           <div className="mt-2">
-            <AddToListaButton producto={normalized} />
+            <AddListaButton producto={normalized} />
           </div>
         </div>
       </Card.Body>
