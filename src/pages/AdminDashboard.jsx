@@ -5,7 +5,7 @@ import { productosAPI, usuariosAPI } from '../data/api';
 import ProductAdmin from '../components/organisms/ProductAdmin';
 import UsuariosAdmin from '../components/organisms/UsuariosAdmin';
 import CategoriasAdmin from '../components/organisms/CategoriasAdmin';
-import '../styles/pages/AdminDashboard.css';
+import '../styles/pages/Admin.css';
 
 function AdminDashboard() {
   const { user } = useAuth();
