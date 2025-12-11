@@ -8,7 +8,7 @@ import IniciarSesion from '../../pages/IniciarSesion';
 import Productos from '../../pages/Productos';
 import AdminDashboard from '../../pages/AdminDashboard';
 import MisListas from '../../pages/MisListas';
-import ListaDetalle from '../../pages/ListaDetalle';
+import ListaDetails from '../../pages/ListaDetails';
 
 const RouterNavbar = () => {
   return (
@@ -58,7 +58,7 @@ const RouterNavbar = () => {
         path="/listas/:id" 
         element={
           <ProtectedRoute requireAuth={true}>
-            <ListaDetalle />
+            <ListaDetails />
           </ProtectedRoute>
         } 
       />
